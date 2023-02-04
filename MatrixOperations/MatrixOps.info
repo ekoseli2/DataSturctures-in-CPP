@@ -1,0 +1,27 @@
+Overloading the addition
+("+") and multiplication ("*") operators.
+
+The arbitrary matrix must be of any shape.
+Matrix mutliplication rules:
+A (m * n)
+B (n * p)
+
+for this multiplication to take place, A columns must equal B rows n = n
+
+(m * n) * (n * p) = (m * p) dimensions
+[ 1 2 3 ]   [ 10 11 ]
+[ 4 5 6 ] * [ 20 21 ]
+            [ 30 31 ]
+=
+[ 1*10 + 2*20 + 3*30  1*11 + 2*21 + 3*31 ]
+[ 4*10 + 5*20 + 6*30  4*11 + 5*21 + 6*31 ]
+
+= 
+
+[ 140 146 ]
+[ 320 335 ]
+
+Addition: 
+Dimensions are same, standard addition by element.
+
+2d matrix has parameters [m][p]
