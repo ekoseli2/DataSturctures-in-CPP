@@ -1,0 +1,30 @@
+/**************************************************************************
+     *  Description:                                                      *
+     *                                                                    *
+     *  This program uses a singly linked list to store game scores. The  *
+     *  scores are accessed from the head node and can be tranversed from *
+     *  the head until the correct node is found and linked out or        *
+     *  reassigned as the head of an appropriate node. The list only      *
+     *  stores the top 10 highest scores entered using a sorting          *
+     *  algorithm.                                                        *
+     *                                                                    *
+     *  Similar to the array this linked list is based off of, it has a   *
+     *  string element to store the name of player and an integer element *
+     *  to store the score. These elements are contained and declared     *
+     *  in a Node class object.                                           *
+     *                                                                    *
+     *  The main file has a file reader from the fstream library that can *
+     *  read one of the 5 test inputs. ScoreListAll.txt contains all the  *
+     *  the scores in one file. The high score list is printed in order   *
+     *  smallest to largest. The program also accounts for negative       *
+     *  integer scores.                                                   *
+     *                                                                    *
+     *  Header file ScoresLinkedList.hpp has the declarations of the      *
+     *  classes necessary for this program. GameEntryNode and the class   *
+     *  SinglyLinkedList provide simple representations of a node that is *
+     *  used to hold a single game entry. The SinglyLinkedList and its    *
+     *  functions such addScore() help to add the score to the list if    *
+     *  the criteria is satisfied as well as sort the linked list at each *
+     *  node insertion, limiting its length to only 10 scores.            *
+     *                                                                    *
+     *********************************************************************/
