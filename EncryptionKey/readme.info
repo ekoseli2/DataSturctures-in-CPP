@@ -1,0 +1,45 @@
+/**************************************************************************
+     *                                                                    *
+     *  Description:                                                      *
+     *                                                                    *
+     *  This code was designed to randomly generate a 26 character 		  *
+     *  encryption key using one letter of the alphabet for its entire    *
+     *  length. The encryption key is shuffled using the rand() method to *
+     *  make a pseudo shuffling of the characters with the processor's    *
+     *  real-time clock cycle.                                            *
+     *                                                                    *
+     *  Two classes each in its respective header file is declared with   *
+     *  member variables as listed: Encrypted message made to hold and    *
+     *  handle the encryption key class object as well as accept a plain  *
+     *  text message. The two are systematically integrated into each     *
+     *  to form a combined encryption key which is the data that can be   *
+     *  returned from the EncrypedMessage class. The message is hidden    *
+     *  between each group of key letters, evenly spaced, with the first  *
+     *  and last group of keys holding the extra key letters that could   *
+     *  not be divided evenly amongst the key letter groups (slots).      *
+     *                                                                    *
+     *  When the number of letters of the plain text (unencrypted message)*
+     *  overwhelms the length of the key, the key then switches roles     *
+     *  with the plain text. Key letters are individually stored between  *
+     *  groups of plain text characters with the head and tail groups     *
+     *  carrying the extra unallocated characters                         *
+     *                                                                    *
+     *  DecryptedMessage is the other class, which seperates keys from    *
+     *  already encrypted messages. It does not need to store the key,    *
+     *  but simply use the reversal of the algorithms above to find which *
+     *  letters are associated with they plain text.                      *
+     *                                                                    *
+     *  Although the DecryptedMessage class does not have any information *
+     *  on the text coming in other than the decrypted message string     *
+     *  itself, it can very amazingly decrypt messages that have been     *
+     *  encrypted multiple times! That is a byproduct of good design of   *
+     *  the encryption and decryption algorithms. The message first must  *
+     *  be encrypted using the 'e' command in this program.               *
+     *                                                                    *
+     *  The test cases will show multiple encryptions and decryptions     *
+     *  a few different files, where the message is made obvious using    *
+     *  single, non alphabetic character sequences. Real sentences are    *
+     *  thrown into the mix as well.                                      *
+     *                                                                    *
+     *********************************************************************/
+
